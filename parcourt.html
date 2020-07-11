@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimeLine</title>
+
+    <style>
+        html{
+            background-image: url(home.jpg);
+            background-repeat: round;
+            font-family: monospace;
+        }
+        h1{
+            padding-top: 50px;
+            color: #f5f4fa;
+            font-size: 2em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+            @media (max-width: 400px){
+            h1,h4,p{
+            font-size: 1.2em;
+            color: chartreuse;
+        }
+        }
+        h1 span{
+            color: rgb(236, 11, 11);
+        }
+        p{
+            color: rgb(7, 5, 12);
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        .timeline{
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+        }
+        .timeline::after{
+        content: '';
+        position: absolute;               
+        width: 12px;
+        background-color: #271ba5d4;;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: 6px;
+        }
+        .container{
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+        }
+
+        .container::after{
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: #07041f;
+        border: 10px solid #39415d;
+        top: 15px;
+        border-radius: 10%;
+        z-index: 1;
+        }
+
+        .left{
+        left: 0;
+        }
+        .right{
+        left: 50%;
+        }
+        .left:before{
+        content: '';
+        height: 0;
+        position: relative;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: #fff  transparent transparent #fff;
+        }
+
+        .right:before{
+        content: '';
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: #fff  transparent transparent #fff;
+        }
+        .right:after{
+        left: -16px;
+        }
+        .content{
+        padding: 11px 15px;
+        background-color: #e2dfe8;
+        position: relative;
+        border-radius: 6px;
+        }
+
+        @media screen and (max-width: 600px){
+        .timeline::after{
+            left: 31px;
+        }
+        .contianer{
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+        .container::before{
+            left: 60px;
+            border: medium solid #fff;
+            border-width: 10px 10px 10px 0;
+            border-color: #fff  transparent transparent #fff;
+        }
+        .left::after .right:after{
+            left: 15px;
+        }
+        .right{
+            left: 0%;
+        }
+        }
+        footer{
+            padding-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        @media  (max-width: 400px){
+    .tab-body,span {
+        color: rgb(225, 230, 220);
+    }
+        }
+        .contact-phone{
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+        <h1>Mon parcourt scolaire <span>et professionnel</span> </h1>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content"> 
+                        <h3>2017-2018 && 2018-2019</h3>
+                        <P>
+                        Stage et benevolat au G-Lab. Charger à la communication chez 0NG-AWU,temps plein.
+                        </P>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>2016 && 2017</h3>
+                        <P>
+                        Licence 3 professionnel 
+                        à L'Institut des Hautes Etudes Economiques et Entrepreneuriales (IHEE). Agent commercial chez Sunu Assurance
+                        </P>
+                     </div>
+                 </div> 
+                <div class="container left">
+                    <div class="content">
+                        <h3>2013</h3>   
+                        <P>
+                        Baccalaureat serie B au Lycee Paul Indjedjet Gondjout.
+                        </P>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>2009</h3>
+                        <P>
+                        Brevet d'Etude du premier cycle Lycee Paul Indjedjet Gondjout .
+                        </P>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h3>2005</h3>
+                        <P>
+                        Certificat D'Etude Primaire,Ecole Publique de Gros Bouquet III
+                        </P>
+                </div>
+                </div>
+        </div>
+        <footer class="copyright">
+            <div>
+                <div>
+                    <a class="contact-phone btn btn-success p-2 rounded-0" href="tel:+24174158898">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>
+                            contactez-moi: +24174158898
+                        </span>
+                     
+                          <div class="tab-body" data-id="A propos"><br>
+                              &COPY; | Powered by Wilfried-MOUILA|       
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
